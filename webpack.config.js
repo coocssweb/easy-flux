@@ -28,7 +28,7 @@ var config = {
     output: {
         path: path.join(__dirname, 'public/dist/'),
         filename: 'app.js',
-        publicPath: '/public/'
+        publicPath: '/static/'
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
