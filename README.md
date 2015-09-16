@@ -9,7 +9,7 @@ dispatcher.js==>事件分发器。实现flux中的dispatcher。
 <h5>程序思路说明</h5>
 <strong>View（app.js），负责：</strong>
 <ul>
-<li>（1）完成渲染后添加对Store的监听，目的是，当Store变化时，回触发View中添加监听是传给监听的回调函数</li>
+<li>(1) 完成渲染后添加对Store的监听，目的是，当Store变化时，回触发View中添加监听是传给监听的回调函数</li>
 <li>(2) 点击添加、删除等事件时，调用Action中定义的方法，并传递相应的数据参数</li>
 </ul>
 <strong>Action(action.js)</strong>，处理View的事件请求，调用相应的事件分发器（Dispatcher）.<br />
