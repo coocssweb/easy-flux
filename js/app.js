@@ -51,17 +51,14 @@ var App = React.createClass({
         },
         render : function(){
             var items = AppStore.getAll();
-            var $that = this;
             var elements = items.map(function(value,index){
                         return (
-                            <li><span>{value.key}</span> , <span onClick={function(){
-                                $that.removeItems(value.id)
-                            }}>删除</span></li>
+                            <li><span>{value.key}</span> , <span onClick={ this.removeItems.bind(this,value.id)}>删除</span></li>
                         )
-                });
+        }.bind(this));
             return (
                     <div id="main-container">
-                    <ul class="key-list">
+                    <ul className="key-list">
                     {elements}
                     </ul>
                     <div id="addBox">
