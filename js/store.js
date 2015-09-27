@@ -10,16 +10,10 @@ function removeItem(item){
     _keys = _.filter(_keys,function(value){
         return value.id !=item;
     })
-    /**
-     * 如果数据需要上传服务端，也在这里进行操作，可以用 jquery 的ajax进行操作
-     */
 }
 
 function addItem(item){
     _keys.push(item);
-    /**
-     * 如果数据需要上传服务端，也在这里进行操作，可以用 jquery 的ajax进行操作
-     */
 }
 
 
